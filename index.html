@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Grafo de Estados de México</title>
+</head>
+<body>
+    <div class="Textoprincipal">
+        <h1 class="textone">Estados de México</h1>
+    </div>
+
+    <div class="form-container">
+        <h2>Registre un Estado </h2>
+        <label for="location">Estado:</label>
+        <input id="location" type="text" placeholder="Ingrese el nombre del Estado">
+        <button id="btn-add1">Agregar Estado</button>
+    </div>
+
+
+    <div class="form-container2">
+        
+        <h2>Ingrese la distancia que existe entre Estado y Estado</h2>
+        <label for="firstLocation">Primera Ubicación:</label>
+        <input id="firstLocation" type="text" placeholder="Ingresa el primer Estado">
+        <label for="secondLocation">Segunda Ubicación:</label>
+        <input id="secondLocation" type="text" placeholder="Ingresa el segundo Estado">
+        <label for="weightLocation">Distancia:</label>
+        <input id="weightLocation" type="number" placeholder="Ingresa la distancia entre los Estados">
+        <button id="btn-add2">Agregar distancia</button>
+    </div>
+
+    
+
+    <div class="form-container3">
+        <h2>Recorrido de Estados de México</h2>
+        <label for="initLocation">Estado de Inicio:</label>
+        <input type="text" id="initLocation" placeholder="Ingrese el Estado de inicio">
+        <button id="btn-add3">Recorrido de profundidad</button>
+        <button id="btn-dijkstra">Ruta mas corta</button>
+    </div>
+
+    <div id="allLocation">
+        <h2>Locaciones</h2>
+        <div id="location-list"></div>
+    </div>
+
+    <div id="dfs-list">    </div>
+
+    
+
+    <table id="placesTable">
+       
+        <tbody id="body-table">
+            
+        </tbody>
+    </table>
+
+
+    <script type="module" src="./src/controllers/script.mjs"></script>
+</body>
+</html>
