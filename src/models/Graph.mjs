@@ -1,4 +1,4 @@
-import LinkedList from "./linkendList.mjs";
+import LinkedList from "./LinkendList/LinkendList.mjs";
 export default class Graph {
   #ListaAdyacencia = [];
   #map = new Map();

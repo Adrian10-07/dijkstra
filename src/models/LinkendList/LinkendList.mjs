@@ -1,5 +1,5 @@
 import Node from "./Node.mjs";
-import Estado from "./Estado.mjs";
+import Estado from "../Estado.mjs";
 
 export default class LinkedList {
   #head;

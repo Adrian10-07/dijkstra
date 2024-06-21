@@ -1,4 +1,4 @@
-class Node {
+export default class Node {
     data
     next
 
@@ -7,4 +7,3 @@ class Node {
         this.next = null
     }
 }
-export default Node
